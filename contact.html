@@ -24,10 +24,63 @@
             </nav>
         </header>
 
+        <div class="title-text-movies">
+            <h1>Contact us:</h1>
+        </div>
+
         <div id="main-home">
-            <section class="shops-container">
-                
+            <section class="container">
+                <div class="slider-wrapper">
+                    <div class="slider">
+                        <img id="slide-1" src="images/mall1.jpg" alt="image of pinecity mall">
+                    </div>
+                    <div class="slider-nav">
+                        <a href="#slide-1"></a>
+                    </div>
+                </div>
+
+                <div class="home-text">
+                    <p>You can contact us below:</p>
+                    <br><br><br><br><br><br>
+                    <ul>
+                        <p>Address: </p>
+                        <br>
+                        <li>Leonora Dr, Ballito, Dolphin Coast, 4399</li>
+                        <br>
+                        <br>
+                        <p>Business hours: </p>
+                        <br>
+                        <li>Monday: 9 am–7 pm</li>
+                        <li>Tuesday: 9 am–7 pm</li>
+                        <li>Wednesday: 9 am–7 pm</li>
+                        <li>Thursday: 9 am–7 pm</li>
+                        <li>Friday: 9 am–7 pm</li>
+                        <li>Saturday: 9 am–7 pm</li>
+                        <li>Sunday: 9 am–5 pm</li>
+                    </ul>
+                </div>
             </section>
+        </div>
+
+        <div id="main-home">
+            <form class="contact-form" action="/submit" method="post">
+                <div class="form-group">
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" name="name" required>
+                </div>
+              
+                <div class="form-group">
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" required>
+                </div>
+              
+                <div class="form-group">
+                  <label for="message">Message:</label>
+                  <textarea id="message" name="message" required></textarea>
+                </div>
+              
+                <input class="submit-button" type="submit" value="Submit">
+              </form>              
         </div>
 
     </body>

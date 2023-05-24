@@ -51,7 +51,6 @@ header {
 
 
 
-
 /*================================IMAGE SLIDER===================================*/
 
 .container{
@@ -59,9 +58,22 @@ header {
 }
 
 .home-text{
-    flex: 0.5;
+    flex: 0.6;
     margin: auto -200px;
 }
+
+.header-text{
+background-color: transparent;
+}
+
+.header-text p{
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+}
+
 
 .home-text p{
     color: white;
@@ -127,41 +139,162 @@ header {
 }
 
 
-/*================================ INFO BOX ===================================*/
-
-a.info-box{
+/*================================ button list ===================================*/
+.button-list {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .button {
+    display: flex;
+    align-items: center;
     text-decoration: none;
-    background: rgba(255, 255, 255, 0.8);
-    width: 90%;
-    height: 90px;
+    width: 100%;
+    background-color: #ffffff;
+    margin-bottom: 12px;
+    padding: 10px;
+    color: #ffffff;
+    border-radius: 2rem;
+  }
+  
+
+  .button img{
+    border-radius: 2rem;
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+    object-fit: cover;
+  }
+  
+  .button-content {
+    width: calc(100% - 90px);
+  }
+  
+  .button h3 {
+    text-align: center;
+    color: black;
+    margin: auto auto;
+    font-size: 18px;
+    background-color: white;
+  }
+  
+  .button p {
+    text-align: center;
+    color: black;
+    margin: auto auto;
+    font-size: 14px;
+    background-color: white;
+  }
+
+  /*================================ MOVIE PAGE ===================================*/
+
+.title-text-movies{
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    color: white;
+    margin: auto auto;
+    font-size: 35px;
+    padding-bottom: 20px;
+}
+
+.button-movie {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    width: 100%;
+    background-color: #ffffff;
+    margin-bottom: 12px;
+    padding: 10px;
+    color: #ffffff;
+    border-radius: 2rem;
+  }
+  
+
+.button-movie img{
+  border-radius: 2rem;
+  width: 400px;
+  height: 400px;
+  margin-right: 10px;
+  object-fit: cover;
+}
+
+.button-content {
+  width: calc(100% - 90px);
+}
+
+.button-movie h3 {
+  color: black;
+  margin: auto auto;
+  font-size: 18px;
+  background-color: white;
+}
+
+.button-movie p {
+  color: black;
+  margin: auto auto;
+  font-size: 14px;
+  background-color: white;
+}
+.home-text-movie p{
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+}
+
+.home-text-movie{
+    flex: 0.6;
+    margin: 100px -200px;
+}
+
+  /*================================ contact form ===================================*/
+
+.contact-form {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 2rem;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+    background-color: #ffffff;
+  }
+  
+  label {
+    background-color: #ffffff;
     display: block;
-    margin: auto;
-    margin-top: 12px;
-    padding: 1px;
-}
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    background-color: #ffffff;
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #000000;
+    border-radius: 4px;
 
-.info-box img{
-    height: 70px;
-    margin: 10px;
-    float: left;
-}
-
-.info-box h3{
-    padding: 0;
-    margin-bottom: 0;
-    width: 90%;
-    color: #572800;
-}
-
-.info-box p{
-    margin: 0;
-    padding: 0;
-    width: 90%;
-    color: 131313;
-}
-
-.info-box p.right{
-    float:right;
-    margin-top: 25px;
-    
-}
+  }
+  
+  .submit-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  .submit-button:hover {
+    background-color: #45a049;
+  }
